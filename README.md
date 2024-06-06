@@ -22,18 +22,22 @@ In the root of the repository there should be a `.env` file with the following v
 
 ### Build
 
-`docker build -t mieszkaniobot .`
+```
+docker build -t mieszkaniobot .
+```
 
 ### Run
 
-`docker run --env-file .env mieszkaniobot`
+```
+docker run --env-file .env mieszkaniobot
+```
 
 To have the URLs of the visited rental offers persisted:
 
 ```
-$ touch visited.txt
-$ docker run \
-    --env-file .env \
-    -v "$(pwd)"/visited.txt:/home/mieszkaniobot/visited.txt \
-    mieszkaniobot
+touch visited.txt
+docker run \
+  --env-file .env \
+  -v "$(pwd)"/visited.txt:/home/mieszkaniobot/visited.txt \
+  mieszkaniobot
 ```
