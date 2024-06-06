@@ -1,6 +1,6 @@
 # Mieszkaniobot
 
-### An assistant in finding a flat on OLX
+### An assistant in finding a flat for rental on OLX
 
 The code is almost 2 years old and it might not work properly due to updates to OLX site. There are also things that I would implement differently now, but what matters is that it got the job done and helped me and a couple of other people.
 
